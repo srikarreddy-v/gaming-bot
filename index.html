@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090909" />
+  <title>EDDIGUDHA AI — Your AI Workspace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">E</span><span>EDDIGUDHA <b>AI</b></span></a>
+    <div class="top-actions"><span class="status-dot"></span><span class="status-text">AI WORKSPACE</span><a class="top-link" href="#about">About</a></div>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <div class="side-label">WORKSPACE</div>
+      <button class="side-item active" id="newChat"><span>＋</span> New conversation</button>
+      <div class="side-label tools-label">QUICK TOOLS</div>
+      <button class="tool-item" data-prompt="Help me write a professional email about: "><span>✉</span><span><b>Email writer</b><small>Clear, polished emails</small></span></button>
+      <button class="tool-item" data-prompt="Create 5 engaging social media captions about: "><span>✦</span><span><b>Caption creator</b><small>Ideas for your posts</small></span></button>
+      <button class="tool-item" data-prompt="Explain this topic in simple terms with an example: "><span>⌘</span><span><b>Explain anything</b><small>Learn step by step</small></span></button>
+      <button class="tool-item" data-prompt="Brainstorm 10 creative ideas for: "><span>◇</span><span><b>Idea generator</b><small>Turn thoughts into ideas</small></span></button>
+      <div class="sidebar-bottom"><div class="mini-orb">✧</div><b>Think beyond limits.</b><p>Your ideas, powered by AI.</p></div>
+    </aside>
+
+    <section class="main-panel">
+      <div class="welcome" id="welcome">
+        <div class="eyebrow"><span class="spark">✦</span> YOUR PERSONAL AI ASSISTANT</div>
+        <h1>Make something<br><span>extraordinary.</span></h1>
+        <p class="welcome-copy">Ask questions, explore ideas, write better and get things done — all in one place.</p>
+        <div class="suggestions">
+          <button class="suggestion" data-prompt="Give me 5 creative website ideas for beginners."><span>✧</span> Creative ideas</button>
+          <button class="suggestion" data-prompt="Create a realistic study plan for learning JavaScript."><span>▤</span> Study plan</button>
+          <button class="suggestion" data-prompt="Write a catchy launch announcement for my new project."><span>↗</span> Write something</button>
+          <button class="suggestion" data-prompt="Explain artificial intelligence in simple language."><span>⌘</span> Learn a topic</button>
+        </div>
+      </div>
+
+      <div class="chat-area" id="chatArea" aria-live="polite"></div>
+      <div class="composer-wrap">
+        <form id="chatForm" class="composer">
+          <textarea id="promptInput" rows="1" placeholder="Message EDDIGUDHA AI..." aria-label="Message EDDIGUDHA AI"></textarea>
+          <div class="composer-footer"><span class="hint">Enter to send · Shift + Enter for a new line</span><button class="send-btn" id="sendBtn" type="submit" aria-label="Send message">↑</button></div>
+        </form>
+        <p class="disclaimer">AI can make mistakes. Check important information.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="about"><span>© 2026 EDDIGUDHA AI</span><span>BUILT FOR BIG IDEAS <i>✦</i></span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
